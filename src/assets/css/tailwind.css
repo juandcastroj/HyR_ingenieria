@@ -1,0 +1,26 @@
+/* Fuente personalizada */
+@font-face {
+  font-family: "TTmilks";
+  src: url("/src/assets/fonts/tt-milks/TT_Milks_Casual_Pie_Trial_Base.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpunMai";
+  src: url("/src/assets/fonts/opun-mai/Opun_Mai_Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BubbleboddyNeue";
+  src: url("/src/assets/fonts/bubbleboddy_neue/bubbleboddyneue_regular_trial.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
