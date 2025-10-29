@@ -1,12 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
 import { useEffect, useRef, useState } from "react";
 import nuestraTierraLogo from "../../assets/images/logo/logo.png";
 import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
   const location = useLocation();
-  const { firstName } = useAuth();
   const [hasBackground, setHasBackground] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const dropdownRef = useRef(null);
@@ -116,7 +114,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
       </div>
 
       {/* Usuario / Mi Cuenta */}
-      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+      {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         {firstName ? (
           <Link
             to="account"
@@ -135,7 +133,8 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
               </Link>
           )
         )}
-      </div>
+      </div> */}
+
     </nav>
   );
 }
