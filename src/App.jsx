@@ -9,14 +9,11 @@ import ContactUsRoute from './routes/ContactUsRoute';
 import ProductsRoute from './routes/ProductsRoute';
 import InscriptionsRoute from './routes/InscriptionsRoute';
 import BlogRoute from './routes/BlogRoute';
-import AuthRoute from './routes/AuthRoute';
 import PetCoinsInfoRoute from './routes/PetCoinsInfoRoute';
 import EmailSentRoute from './routes/EmailSentRoute';
 
 import TeamRoute from './routes/TeamRoute';
-import ProfileRoute from './routes/ProfileRoute';
-import VerifyEmailRoute from './routes/VerifyEmailRoute';
-import { PrivateRoute } from './routes/private-routes/PrivateRoute';
+
 import HistoryRoute from './routes/HistoryRoute';
 
 import StrategicLinesRoute from './routes/strategic-lines/StrategicLinesRoute';
@@ -66,36 +63,6 @@ export default function App() {
 
             <Route path='/contact' element={<ContactUsRoute/>}></Route>
             <Route path='/email-sent' element={<EmailSentRoute/>}></Route>
-
-            {/* 🔑 Página de auth (pública): si ya está logueado lo mando fuera) */}
-            <Route
-              path="/auth"
-              element={
-                <PrivateRoute requireAuth={false}>
-                  <AuthRoute />
-                </PrivateRoute>
-              }
-            />
-
-            {/* 📩 Página de verificación — solo para usuarios logueados Y NO verificados */}
-            <Route
-              path="/verify-email"
-              element={
-                <PrivateRoute requireAuth={true} onlyWhenNotVerified={true}>
-                  <VerifyEmailRoute />
-                </PrivateRoute>
-              }
-            />
-
-            {/* 👤 Perfil: requiere login y correo verificado */}
-            <Route
-              path="/account"
-              element={
-                <PrivateRoute requireAuth={true} requireVerified={true}>
-                  <ProfileRoute />
-                </PrivateRoute>
-              }
-            />
 
             <Route path='*' element={<HomeRoute/>}></Route>
           </Routes>
