@@ -1,25 +1,21 @@
 export const navBarItems = [
   {
-    name: "Nosotros",
-    subItems: [
-      { name: "Historia", to: "/history" },
-      { name: "Equipo", to: "/team" },
-    ],
+    name: "Inicio",
   },
     {
-    name: "Iniciativas",
+    name: "Servicios",
   },
   {
-    name: "Tienda",
+    name: "Proyectos",
   },
   {
-    name: "Comunidad",
+    name: "Contacto",
   },
 ];
 
 export const footerItems = [
-  { name: "Historia", to: "/history" },
-  { name: "Líneas Estratégicas", to: "/strategic-lines" },
-  { name: "Proyectos", to: "/projects" },
-  { name: "Productos", to: "/products" },
+  { name: "Inicio", to: "/" },
+  { name: "Servicios", to: "/servicios" },
+  { name: "Proyectos", to: "/proyectos" },
+  { name: "Contacto", to: "/Contacto" },
 ];

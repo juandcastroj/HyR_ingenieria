@@ -5,21 +5,17 @@ import tortleImg from "../../assets/images/home/hero-bg.png";
 export default function Hero() {
 
     useEffect(() => {
-      document.title = "HyR Ingeniería - Sitio oficial";
+      document.title = "HyR sas - Sitio oficial";
     }, [])
 
   return (
       <div className="relative isolate overflow-hidden items-center">
         <img
-          alt=""
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          alt="hero section background"
+          src="https://static.wixstatic.com/media/50ea60_8a5927a97be849d786180f72f6760d20~mv2.jpg/v1/fill/w_1351,h_640,fp_0.50_0.39,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50ea60_8a5927a97be849d786180f72f6760d20~mv2.jpg"
           className="absolute inset-0 -z-10 size-full object-cover not-dark:hidden"
         />
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=fff&sat=-100&exp=15&blend-mode=overlay"
-          className="absolute inset-0 -z-10 size-full object-cover opacity-10 dark:hidden"
-        />
+
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"

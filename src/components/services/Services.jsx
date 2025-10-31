@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { strategicLines } from "../../constants/strategicLines";
 
-export default function StrategicLines() {
+export default function Services() {
 
     useEffect(() => {
       document.title = "HyR Ingeniería - Sitio oficial";
