@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { strategicLines } from "../../constants/strategicLines";
+
+
 
 export default function Services() {
 
@@ -35,11 +36,11 @@ export default function Services() {
           </div>
 
           {/* Grid de proyectos */}
-          <ul
+          {/* <ul
             role="list"
             className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 animate-fade-down animate-duration-[1500ms] animate-delay-500"
           >
-            {strategicLines.map(
+            {projects.map(
               ({ name, imageUrl, url }, index) => (
                 <li
                   key={index}
@@ -70,7 +71,7 @@ export default function Services() {
                 </li>
               )
             )}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
