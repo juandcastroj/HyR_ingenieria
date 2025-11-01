@@ -2,7 +2,7 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/2
 
 export default function Map() {
     return (
-    <div className="bg-[#affff4] py-8 sm:py-12">
+    <div className="bg-[#d0e6ff] py-8 sm:py-12">
       <div className="mx-auto grid max-w-5xl reve grid-cols-1 lg:grid-cols-2 gap-9">
 
             <div className="flex justify-center">
@@ -13,7 +13,7 @@ export default function Map() {
             <div className="relative px-6 lg:static lg:px-8 py-12 sm:py-8 lg:py-0 font-OpunMai">
                 <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg animate-fade-down sm:animate-fade-left">
                     <h2 className="text-4xl font-BubbleboddyNeue font-medium tracking-tight text-[#033649] sm:text-5xl">
-                    Visítanos
+                    Contáctanos
                     </h2>
 
                     <p className="mt-6 text-base font-semibold text-[#004e64]">
@@ -27,8 +27,8 @@ export default function Map() {
                         <PhoneIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                         </dt>
                         <dd>
-                        <a href="tel:+57 319 641 03 97" className="text-[#033649] font-semibold">
-                            +57 319 641 03 97
+                        <a href="tel:+57 319 268 4463" className="text-[#033649] font-semibold">
+                            +57 319 268 4463
                         </a>
                         </dd>
                     </div>
@@ -39,8 +39,8 @@ export default function Map() {
                         <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                         </dt>
                         <dd>
-                        <a href="mailto:comunicaciones@nuestratierraco.com" className="text-[#033649] font-semibold">
-                            comunicaciones@nuestratierraco.com                  
+                        <a href="mailto:contacto@ingenieriahyr.com" className="text-[#033649] font-semibold">
+                            contacto@ingenieriahyr.com                  
                             </a>
                         </dd>
                     </div>
@@ -51,7 +51,7 @@ export default function Map() {
                         <BuildingOffice2Icon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                         </dt>
                         <dd className='text-[#033649] font-semibold'>
-                        Ciudad Bolivar, Bogotá D.C, Colombia.
+                            Carrera 78A # 65 Sur - 15 Bogotá D.C, Colombia.
                         </dd>
                     </div>
 

@@ -97,7 +97,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             { error ? <ShowError /> : null }
             <button
               type="submit"
-              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-[#033649] hover:bg-[#165d77] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-[#051a50] hover:bg-[#165d77] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Enviar
             </button>

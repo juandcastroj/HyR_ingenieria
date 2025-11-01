@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import nuestraTierraLogo from "../../assets/images/logo/logo.png";
+import nuestraTierraLogo from "../../assets/images/logo/logo.svg";
 import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
@@ -33,13 +33,12 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
   return (
     <nav
       aria-label="Global"
-      className={`flex items-center justify-between px-6 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
-        ${
-          location.pathname === "/account"
-            ? "bg-white shadow-md backdrop-blur-sm py-1"
-            : hasBackground
-            ? "bg-white/30 shadow-md backdrop-blur-sm py-6"
-            : "bg-transparent py-6"
+      className={`flex items-center justify-between px-6 py-1 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
+        ${  hasBackground
+            ? 
+            "bg-white/40 shadow-md backdrop-blur-sm"
+            :
+             "bg-white/70"
         }`}
     >
       {/* Logo */}
@@ -49,12 +48,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
           <img
             alt="Logo"
             src={nuestraTierraLogo}
-            className={ `w-auto rounded-full
-                 ${
-                   location.pathname === "/account" 
-                   ? "h-16 relative top-0" 
-                   : "h-24 absolute top-3"}
-            `}
+            className="h-16 relative top-0"
           />
         </Link>
       </div>
@@ -74,37 +68,14 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
       {/* Menu Desktop */}
       <div className="hidden lg:flex items-center lg:gap-x-12" ref={dropdownRef}>
         {navigationItems.map((item) =>
-          item.subItems ? (
-            <div key={item.name} className="relative">
-              <button
-                onClick={() => toggleDropdown(item.name)}
-                className="flex items-center gap-1 text-sm font-semibold cursor-pointer text-blueText">
-                {item.name}
-                <ChevronDownIcon className="w-4 h-4" strokeWidth="2.5"/>
-              </button>
-              {openDropdown === item.name && (
-                <div className="absolute text-center mt-2 w-44 rounded-md shadow-lg bg-white/70 ring-1 ring-gray-200 z-50">
-                  {item.subItems.map((sub) => (
-                    <Link
-                      key={sub.name}
-                      to={sub.to}
-                      onClick={() => toggleDropdown()}
-                      className="block px-4 py-2 text-sm font-semibold text-blueText hover:bg-blueText/10"
-                    >
-                      {sub.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ) : (
+         (
             <Link
               key={item.name}
               to={item.to}
               className={`text-sm/6 font-semibold cursor-pointer ${
                 location.pathname === item.to
-                  ? "text-[#458ea8]"
-                  : "text-blueText hover:text-[#458ea8]"
+                  ? "text-[#2d63aa]"
+                  : "text-[#032579] hover:text-[#2d63aa]"
               }`}
             >
               {item.name}
@@ -112,29 +83,6 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
           )
         )}
       </div>
-
-      {/* Usuario / Mi Cuenta */}
-      {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        {firstName ? (
-          <Link
-            to="account"
-            className="text-sm/6 font-semibold text-[#033649]"
-          >
-            Hola, {firstName} 👋
-          </Link>
-        ) : (
-          location.pathname !== "/auth" && (
-              <Link
-                to="/auth"
-                onClick={handleMobileMenu}
-                className="text-center sm:text-left -mx-3 block rounded-xl px-3 py-1 text-sm font-semibold text-blueText border-blueText border-[1px]"
-              >
-                Mi Cuenta
-              </Link>
-          )
-        )}
-      </div> */}
-
     </nav>
   );
 }

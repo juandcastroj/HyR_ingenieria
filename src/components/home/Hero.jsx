@@ -9,11 +9,11 @@ export default function Hero() {
     }, [])
 
   return (
-      <div className="relative isolate overflow-hidden items-center">
+      <div className="min-h-screen relative isolate overflow-hidden items-center">
         <img
           alt="hero section background"
           src="https://static.wixstatic.com/media/50ea60_8a5927a97be849d786180f72f6760d20~mv2.jpg/v1/fill/w_1351,h_640,fp_0.50_0.39,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50ea60_8a5927a97be849d786180f72f6760d20~mv2.jpg"
-          className="absolute inset-0 -z-10 size-full object-cover not-dark:hidden"
+          className="absolute inset-0 -z-10 size-full object-cover filter brightness-50"
         />
 
         <div
@@ -29,26 +29,25 @@ export default function Hero() {
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48">
+          <div className="mx-auto max-w-2xl py-48">
         
             <div className="text-center">
-              <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl dark:text-white">
-                Data to enrich your online business
+              <h1 className="text-5xl font-semibold text-gray-100 sm:text-6xl animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
+               HYR S.A.S. INGENIERÍA Y MONTAJES 
               </h1>
-              <p className="mt-8 text-lg font-medium text-pretty text-gray-600 sm:text-xl/8 dark:text-gray-400">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat.
+              <p className="mt-8 text-lg font-medium text-white sm:text-xl/8 animate-fade-down animate-duration-[2500ms] animate-delay-[1000ms]">
+               Realizamos proyectos de Ingeniería Civil y Mecánica generando credibilidad y compromiso implementando estándares de calidad y seguridad.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
+                <Link
+                  to="/servicios"
+                  className="rounded-md bg-[#032579] px-3.5 py-2.5 text-base font-semibold text-white shadow-xs hover:bg-blue-700"
                 >
-                  Get started
-                </a>
-                <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+                  Servicios
+                </Link>
+                <Link to="/proyectos" className="text-base font-semibold text-white hover:text-gray-300">
+                  Ver mas <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </div>
           </div>
