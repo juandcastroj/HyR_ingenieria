@@ -4,7 +4,7 @@ import image1 from "../../assets/images/home/Historia.jpeg";
 
 export default function MainInfo() {
   return (
-    <div className="px-6 py-8 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#affff4]">
+    <div className="px-6 py-8 lg:px-8 bg-[#d0e6ff]">
       <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
 
         <div className="mt-10">
@@ -31,7 +31,7 @@ export default function MainInfo() {
           <figure className="mt-16 flex flex-col">
               <img
                   alt=""
-                  src={image1}
+                  src="https://static.wixstatic.com/media/50ea60_8be4d12209ef4cd98202d25b5b5b2f4f~mv2.jpg/v1/fill/w_1351,h_512,fp_0.49_0.42,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50ea60_8be4d12209ef4cd98202d25b5b5b2f4f~mv2.jpg"
                   className="aspect-video rounded-xl bg-gray-50 object-cover"
               />
               <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText font-OpunMai">

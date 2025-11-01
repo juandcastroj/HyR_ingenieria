@@ -4,9 +4,9 @@ import { Autoplay } from "swiper/modules";
 
 export default function PartnersBanner() {
   return (
-    <div className="bg-blueText py-8 sm:pt-8">
+    <div className="bg-[#032579] py-8 sm:pt-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-base sm:text-lg/8 font-semibold text-[#9effca]">
+        <h2 className="text-center text-base sm:text-lg/8 font-semibold text-gray-200">
           Con la confianza de algunos de los equipos más innovadores del país :
         </h2>
 
