@@ -2,7 +2,7 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/2
 
 export default function Map() {
     return (
-    <div className="bg-[#d0e6ff] py-8 sm:py-12">
+    <div className="bg-[#d0e6ff] py-8 sm:py-12 lg:py-24">
       <div className="mx-auto grid max-w-5xl reve grid-cols-1 lg:grid-cols-2 gap-9">
 
             <div className="flex justify-center">

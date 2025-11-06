@@ -1,34 +1,25 @@
 import { InformationCircleIcon } from '@heroicons/react/20/solid'
 // import banner from "../../assets/images/projects/image2.png";
-import image1 from "../../assets/images/home/Historia.jpeg";
+//import image1 from "../../assets/images/home/Historia.jpeg";
 
 export default function MainInfo() {
   return (
-    <div className="px-6 py-8 lg:px-8 bg-[#d0e6ff]">
+    <div className="px-6 py-8 lg:py-20 lg:px-8 bg-[#d0e6ff]">
       <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
 
         <div className="mt-10">
 
-          <figure className="mt-10 border-l-2 border-blueText pl-9 transition animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
+          <figure className="mt-10 border-l-4 border-blueText pl-9 transition animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
             <blockquote className="font-semibold text-blueText font-OpunMai">
               <p>
-                “¡Bienvenidos a un mundo donde la creatividad, la conciencia y el cambio se entrelazan para dar forma al mañana! En Nuestra Tierra, la innovación es nuestra brújula y el desarrollo sostenible es nuestro horizonte.”
+                Contamos con MATERIALES y TALENTO HUMANO
+                que proporcionan la EFICIENCIA y CONFIANZA
+                necesaria para mantener tu proyecto en marcha.
               </p>
             </blockquote>
-
-            {/* <figcaption className="mt-6 flex gap-x-4">
-              <img
-                alt=""
-                src={testimonialImg}
-                className="size-6 flex-none rounded-full bg-gray-50"
-              />
-              <div className="text-sm/6">
-                <strong className="font-semibold text-gray-900">NuestraTierraco</strong>
-              </div>
-            </figcaption> */}
           </figure>
 
-          <figure className="mt-16 flex flex-col">
+          <figure className="mt-16 flex flex-col animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
               <img
                   alt=""
                   src="https://static.wixstatic.com/media/50ea60_8be4d12209ef4cd98202d25b5b5b2f4f~mv2.jpg/v1/fill/w_1351,h_512,fp_0.49_0.42,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50ea60_8be4d12209ef4cd98202d25b5b5b2f4f~mv2.jpg"
@@ -36,7 +27,7 @@ export default function MainInfo() {
               />
               <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText font-OpunMai">
                   <InformationCircleIcon aria-hidden="true" className="mt-0.5 size-5 flex-none text-blueText"/>
-                  Nuestros inicios en la recolección de materiales.
+                  Nuestro equipo.
               </figcaption>
           </figure>
         </div>
