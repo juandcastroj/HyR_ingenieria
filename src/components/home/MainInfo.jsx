@@ -4,13 +4,13 @@ import { InformationCircleIcon } from '@heroicons/react/20/solid'
 
 export default function MainInfo() {
   return (
-    <div className="px-6 py-8 lg:py-20 lg:px-8 bg-[#d0e6ff]">
-      <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
+    <div className="px-6 py-16 lg:py-24 lg:px-8 bg-[#051a50]">
+      <div className="mx-auto max-w-3xl text-base/7 text-gray-100">
 
         <div className="mt-10">
 
-          <figure className="mt-10 border-l-4 border-blueText pl-9 transition animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
-            <blockquote className="font-semibold text-blueText font-OpunMai">
+          <figure className="mt-10 border-l-2 border-gray-200 pl-9 transition animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
+            <blockquote className="font-semibold text-gray-100">
               <p>
                 Contamos con MATERIALES y TALENTO HUMANO
                 que proporcionan la EFICIENCIA y CONFIANZA

@@ -19,7 +19,7 @@ export const services = [
   },
   { 
     name: 'CIVIL E HIDRÁULICA',
-    description: 'Obras Civiles, Proyectos de hidráulica.' ,
+    description: 'Obras Civiles y todo tipo de Proyectos de hidráulica.' ,
     attendant: 'INGENIERO CIVIL',
     contact: '(+57) 319 268 4463',
   }

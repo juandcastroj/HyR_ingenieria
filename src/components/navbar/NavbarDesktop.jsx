@@ -1,13 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
-import nuestraTierraLogo from "../../assets/images/logo/logo.svg";
-import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import { useEffect, useState } from "react";
+import HyRLogo from "../../assets/images/logo/logo.svg";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 
 export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
+
   const location = useLocation();
   const [hasBackground, setHasBackground] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const dropdownRef = useRef(null);
 
   // cambiar fondo al hacer scroll
   useEffect(() => {
@@ -16,38 +15,24 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // cerrar dropdown al hacer click fuera
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpenDropdown(null);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const toggleDropdown = (name) =>
-    setOpenDropdown(openDropdown === name ? null : name);
-
   return (
     <nav
       aria-label="Global"
       className={`flex items-center justify-between px-6 py-1 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
         ${  hasBackground
             ? 
-            "bg-white/40 shadow-md backdrop-blur-sm"
+            "bg-white/50 shadow-md backdrop-blur-sm"
             :
-             "bg-white/70"
+             "bg-white/80"
         }`}
     >
       {/* Logo */}
       <div className="flex lg:flex-1">
         <Link to="/" className="-m-1.5 p-1.5">
-          <span className="sr-only">NuestraTierraLogoCo</span>
+          <span className="sr-only">HyR sas logo</span>
           <img
             alt="Logo"
-            src={nuestraTierraLogo}
+            src={HyRLogo}
             className="h-16 relative top-0"
           />
         </Link>
@@ -66,7 +51,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
       </div>
 
       {/* Menu Desktop */}
-      <div className="hidden lg:flex items-center lg:gap-x-12" ref={dropdownRef}>
+      <div className="hidden lg:flex items-center lg:gap-x-12">
         {navigationItems.map((item) =>
          (
             <Link

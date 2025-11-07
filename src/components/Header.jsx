@@ -1,7 +1,8 @@
 import { useState } from 'react'
+
 import { navBarItems } from '../constants/navbar'
 import NavbarDesktop from './navbar/NavbarDesktop'
-import NavbarMobile from './navbar/NavbarMobile'
+import MenuMobile from './navbar/MenuMobile'
 
 export default function Header() {
   
@@ -14,7 +15,7 @@ export default function Header() {
     return ( 
       <header className="fixed inset-x-0 top-0 z-50 font-OpunMai">
         <NavbarDesktop navigationItems={navBarItems} handleMobileMenu={handleMobileMenu} />
-        <NavbarMobile navigationItems={navBarItems} handleMobileMenu={handleMobileMenu} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen}/>
+        <MenuMobile navigationItems={navBarItems} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen}/>
       </header>
     );
 }

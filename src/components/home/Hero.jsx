@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-48">
         
-            <div className="text-center">
+            <div className="text-center grid gap-y-8 lg:gap-y-2">
               <h1 className="text-5xl font-semibold text-gray-100 sm:text-6xl animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
                HyR S.A.S. INGENIERÍA Y MONTAJES 
               </h1>

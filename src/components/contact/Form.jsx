@@ -2,7 +2,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
   return (
     <>
       <form
-        action="https://formsubmit.co/nuestratierracorporación@gmail.com"
+        action="https://formsubmit.co/contacto@ingenieriahyr.com"
         method="POST"
         className="px-6 lg:px-8 py-4 sm:py-20 lg:py-28 animate-fade-down sm:animate-fade-left"
       >
