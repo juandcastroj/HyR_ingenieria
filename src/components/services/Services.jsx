@@ -22,13 +22,13 @@ export default function Services() {
             {/* <h2 id="services-heading" className="font-medium text-gray-500">
               Nuestros Servicios
             </h2> */}
-            <p className="mt-4 text-4xl font-bold tracking-tight text-blue-900">Nuestros Servicios</p>
+            <p className="mt-4 text-4xl font-Oswald font-bold text-blue-900">Nuestros Servicios</p>
             {/* <p className="mt-4 text-gray-500">
               We've obsessed over every detail of this handcrafted journal to bring you the best materials for daily
               use.
             </p> */}
 
-            <dl className="mt-12 grid grid-cols-1 gap-x-8 gap-y-16 text-sm sm:grid-cols-2">
+            <dl className="mt-12 grid grid-cols-1 gap-x-8 gap-y-16 text-sm sm:grid-cols-2 font-Oswald">
               {services.map((service) => (
                 <div key={service.name}>
 

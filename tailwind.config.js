@@ -10,10 +10,9 @@ export default {
   theme: {
     extend: {   
       fontFamily: {
+        Oswald: ["Oswald", "ui-sans-serif"], 
       },
     colors: {
-      blueText: '#033649',
-      blueButton: '#004e64',
     },},
   },
   plugins: [

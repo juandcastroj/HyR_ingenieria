@@ -1,6 +1,6 @@
 export const services = [
   {
-    name: 'TINTAS',
+    name: 'Ensayos No Destructivos (END)',
     description: 'Inspección de soldaduras por método de tintas penetrantes e inspección visual.',
     attendant: 'INSPECTOR CALIFICADO DE TINTAS',
     contact: '(+57) 310 348 3588',
@@ -19,7 +19,7 @@ export const services = [
   },
   { 
     name: 'CIVIL E HIDRÁULICA',
-    description: 'Obras Civiles y todo tipo de Proyectos de hidráulica.' ,
+    description: 'Obras Civiles y todo tipo de proyectos de hidráulica.' ,
     attendant: 'INGENIERO CIVIL',
     contact: '(+57) 319 268 4463',
   }

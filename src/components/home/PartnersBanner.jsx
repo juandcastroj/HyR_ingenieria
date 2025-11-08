@@ -10,11 +10,12 @@ import partner5 from "../../assets/images/partners/ibal_edited.png"
 
 export default function PartnersBanner() {
   return (
-    <div className="bg-[#0f2f83] py-12 sm:pt-8">
+    <div className="bg-white py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-base sm:text-lg/8 font-semibold text-gray-200">
-          Algunos de nuestros clientes:
-        </h2>
+        {/* <h2 className="text-center text-base font-semibold text-[#0f2f83]">
+          Nos asociamos con clientes gubernamentales y de la industria
+          para brindar soluciones completas, eficientes y seguras.
+        </h2> */}
 
         <Swiper
           modules={[Autoplay]}
@@ -30,7 +31,6 @@ export default function PartnersBanner() {
             768: { slidesPerView: 4 },  // pantallas medianas
             1024: { slidesPerView: 5 }, // pantallas grandes
           }}
-          className="mt-10"
         >
           <SwiperSlide className="flex items-center justify-center">
             <img
