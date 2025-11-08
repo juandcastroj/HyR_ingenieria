@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import HyRLogo from "../../assets/images/logo/logo.svg";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
-export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
+export default function Navbar({ navigationItems, handleMobileMenu }) {
 
   const location = useLocation();
   const [hasBackground, setHasBackground] = useState(false);
@@ -18,12 +18,12 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
   return (
     <nav
       aria-label="Global"
-      className={`flex items-center justify-between px-6 py-1 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
+      className={`flex items-center justify-between font-Oswald px-6 py-1 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
         ${  hasBackground
             ? 
-            "bg-white/50 shadow-md backdrop-blur-sm"
+            "bg-white/70 shadow-md backdrop-blur-sm"
             :
-             "bg-white/80"
+             "bg-white"
         }`}
     >
       {/* Logo */}
