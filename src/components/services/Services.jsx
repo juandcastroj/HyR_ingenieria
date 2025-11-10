@@ -2,6 +2,11 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { services } from '../../constants/services';
 
+import img1 from "../../assets/images/services/main-image.png";
+import img2 from "../../assets/images/services/main-image.png";
+import img3 from "../../assets/images/services/main-image.png";
+import img4 from "../../assets/images/services/main-image.png";
+
 export default function Services() {
 
     useEffect(() => {
@@ -10,6 +15,7 @@ export default function Services() {
 
   return (
     <div className="bg-white">
+
       <section aria-labelledby="services-heading" className="relative">
         <img
           alt=""
@@ -56,6 +62,45 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+
+
+      {/* <section className="mt-24 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+        <div className="lg:p-12 text-center sm:text-right">
+          <h2 className="text-2xl font-bolds text-[#004e64]">
+            SOLDADURAS
+          </h2>
+          <p className="mt-6 text-base/7 text-[#004e64]">
+            Fabricación e instalación de accesorios, soportes, piezas especiales y estructuras metálicas.
+          </p>
+          <p className="mt-8 text-base/7 font-semibold text-[#004e64]">
+              INGENIERO MECÁNICO
+          </p>
+          <p  className="mt-8 text-base/7 text-[#004e64]">
+            (+57) 310 348 3588
+          </p>
+        </div>
+
+        <div className="p-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
+          <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
+              <img
+                alt=""
+                src={img1}
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
+              <img
+                alt=""
+                src={img4}
+                className="block size-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section> */}
+
     </div>
   )
 }

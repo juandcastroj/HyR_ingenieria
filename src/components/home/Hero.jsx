@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import tortleImg from "../../assets/images/home/hero-bg.png";
 
 export default function Hero() {
 
