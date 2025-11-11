@@ -1,14 +1,4 @@
-import React from "react";
 import { Building2, Calendar, CheckCircle, Hammer } from "lucide-react";
-
-// Espera un objeto con esta forma:
-// {
-//   title: "PTAR",
-//   client: "CEPS",
-//   year: "2020 - 2021",
-//   description: "texto...",
-//   tasks: ["tarea1", "tarea2", ...]
-// }
 
 export default function Card({ data }) {
   if (!data) return null;

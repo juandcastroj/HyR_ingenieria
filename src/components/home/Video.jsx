@@ -1,6 +1,6 @@
 export default function Video() {
     return (
-        <section className="bg-[#051a50] flex justify-center items-center pt-16 pb-0">
+        <section className="bg-[#051a50] flex justify-center items-center py-16">
             <div className="w-full max-w-3xl px-4">
                 <video
                     className="w-full rounded-2xl shadow-lg"
