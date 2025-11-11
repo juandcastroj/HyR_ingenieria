@@ -1,4 +1,5 @@
 import { InformationCircleIcon } from '@heroicons/react/20/solid'
+import teamImg from "../../assets/images/nosotros/01.jpg"
 
 export default function MainInfo() {
   return (
@@ -19,8 +20,8 @@ export default function MainInfo() {
 
           <figure className="mt-16 flex flex-col animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
               <img
-                  alt=""
-                  src="https://static.wixstatic.com/media/50ea60_8be4d12209ef4cd98202d25b5b5b2f4f~mv2.jpg/v1/fill/w_1351,h_512,fp_0.49_0.42,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50ea60_8be4d12209ef4cd98202d25b5b5b2f4f~mv2.jpg"
+                  alt="Nuestro equipo"
+                  src={teamImg}
                   className="aspect-video rounded-xl bg-gray-50 object-cover"
               />
               <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-white">

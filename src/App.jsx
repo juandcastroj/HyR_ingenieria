@@ -3,6 +3,7 @@ import Header from './components/Header'
 import HomeRoute from './routes/HomeRoute';
 import ServicesRoute from './routes/ServicesRoute';
 import ProjectsRoute from './routes/ProjectsRoute';
+import NosotrosRoute from './routes/NosotrosRoute';
 import ContactUsRoute from './routes/ContactUsRoute';
 import EmailSentRoute from './routes/EmailSentRoute';
 import ScrollToTop from './components/ScrollToTop';
@@ -17,6 +18,7 @@ export default function App() {
             <Route path='/' element={<HomeRoute/>}></Route>
             <Route path='/servicios' element={<ServicesRoute/>}></Route>
             <Route path='/proyectos' element={<ProjectsRoute/>}></Route>
+            <Route path='/nosotros' element={<NosotrosRoute/>}></Route>
             <Route path='/contacto' element={<ContactUsRoute/>}></Route>
             <Route path='/correo-enviado' element={<EmailSentRoute/>}></Route>
             <Route path='*' element={<HomeRoute/>}></Route>
