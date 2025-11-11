@@ -7,7 +7,6 @@ import img6 from "../../assets/images/services/carousel/06.png";
 import img7 from "../../assets/images/services/carousel/07.png";
 import img8 from "../../assets/images/services/carousel/08.png";
 import img9 from "../../assets/images/services/carousel/09.png";
-// import img10 from "../../assets/images/services/carousel/010.png";
 import img11 from "../../assets/images/services/carousel/011.png";
 import img12 from "../../assets/images/services/carousel/012.png";
 import img13 from "../../assets/images/services/carousel/013.png";
@@ -26,7 +25,6 @@ export const imagesCarousel = [
     { id: 7, img: img7 },
     { id: 8, img: img8 },
     { id: 9, img: img9 },
-    // { id: 10, img: img10 },
     { id: 11, img: img11 },
     { id: 12, img: img12 },
     { id: 13, img: img13 },

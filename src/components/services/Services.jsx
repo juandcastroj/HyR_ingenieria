@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { services } from '../../constants/services/services';
+import mainImg from "../../assets/images/services/services.png";
 
 export default function Services() {
 
@@ -14,7 +15,7 @@ export default function Services() {
       <section aria-labelledby="services-heading" className="relative">
         <img
           alt=""
-          src="https://static.wixstatic.com/media/50ea60_37e21eeaf8fd48e4a78d36e588c6394e~mv2.jpg/v1/fill/w_662,h_1280,al_c,q_85,enc_avif,quality_auto/50ea60_37e21eeaf8fd48e4a78d36e588c6394e~mv2.jpg"
+          src={mainImg}
           className="aspect-3/2 w-full object-cover sm:aspect-5/2 lg:absolute lg:aspect-auto h-2/3 lg:h-full lg:w-1/2 lg:pr-4 xl:pr-16"
         />
 
