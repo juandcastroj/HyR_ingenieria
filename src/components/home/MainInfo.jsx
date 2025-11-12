@@ -14,6 +14,8 @@ export default function MainInfo() {
                 Contamos con MATERIALES y TALENTO HUMANO
                 que proporcionan la EFICIENCIA y CONFIANZA
                 necesaria para mantener tu proyecto en marcha.
+
+                Desarrollamos planes integrales y coordinados para monitorear, evaluar y rastrear el desempeño de nuestro talento humano, proyectos y obras.
               </p>
             </blockquote>
           </figure>
