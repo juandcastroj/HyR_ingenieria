@@ -36,7 +36,8 @@ export default function Projects() {
           Nuestros proyectos
         </h1>
         <p className="mt-4">
-          Nuestro equipo tiene la experiencia y los conocimientos disponibles para completar con éxito proyectos simples y complejos de ingeniería civil y mecánica.
+          Desde mejoras, montajes, mantenimientos preventivos y correctivos, hasta alteraciones y reemplazos de estructuras y accesorios.
+          Aplicamos nuestra experiencia y compromiso para enfrentar los desafíos complejos de ingeniería civil y mecánica.
         </p>
       </div>
 

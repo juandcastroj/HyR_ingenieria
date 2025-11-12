@@ -16,7 +16,7 @@ export default function Nosotros ()  {
   return (
     <>
        {/* MISIÓN */}
-        <div className="relative isolate -z-10 mt-12 sm:mt-20 py-12">
+        <div className="relative isolate mt-12 sm:mt-20 py-12">
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="mx-auto flex max-w-2xl flex-col gap-16 font-Oswald bg-[#051a50] p-4 sm:p-6 shadow-xl ring-1 ring-gray-900/5 sm:rounded-3xl lg:mx-0 lg:max-w-none lg:flex-row lg:items-center xl:gap-x-20">
               <img
@@ -48,7 +48,7 @@ export default function Nosotros ()  {
                 <div className="mt-10 flex">
                   <Link
                     to="/proyectos"
-                    className="text-sm/6 font-semibold text-white hover:text-blue-300"
+                    className="text-sm/6 font-semibold text-white hover:text-blue-300 z-20"
                   >
                     Mira nuestros proyectos
                     <span aria-hidden="true">&rarr;</span>
@@ -61,7 +61,7 @@ export default function Nosotros ()  {
 
 
       {/* VISIÓN */}
-        <div className="relative isolate -z-10 py-12">
+        <div className="relative isolate mt-6 pb-16">
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="mx-auto flex max-w-2xl flex-col gap-16 font-Oswald bg-[#051a50] p-4 sm:p-6 shadow-xl ring-1 ring-gray-900/5 sm:rounded-3xl lg:mx-0 lg:max-w-none lg:flex-row lg:items-center xl:gap-x-20">
               <img
@@ -86,7 +86,7 @@ export default function Nosotros ()  {
                     to="/servicios"
                     className="text-sm/6 font-semibold text-white hover:text-blue-300"
                   >
-                    Mira nuestros servicios
+                    Conoce nuestros servicios
                     <span aria-hidden="true">&rarr;</span>
                   </Link>
                 </div>
