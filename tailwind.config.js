@@ -8,12 +8,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {   
+    extend: {
       fontFamily: {
-        Oswald: ["Oswald", "ui-sans-serif"], 
+        Oswald: ["Oswald", "sans-serif"], 
       },
-    colors: {
-    },},
+      colors: {
+      },
+    },
   },
   plugins: [
     tailwindcssAnimated

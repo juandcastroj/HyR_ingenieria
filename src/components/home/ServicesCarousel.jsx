@@ -11,7 +11,7 @@ export default function ServicesCarousel() {
        
         <div className="max-w-3xl mx-auto text-blue-900 font-Oswald">
           <h1 className="text-xl sm:text-3xl font-bold">
-             INNOVACIÓN, EXPERIENCIA Y SOLUCIONES INTEGRALES.
+             INNOVACIÓN, EXPERIENCIA Y SOLUCIONES INTEGRALES
           </h1>
         </div>
 
