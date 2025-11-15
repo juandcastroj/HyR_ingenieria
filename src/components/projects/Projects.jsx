@@ -21,6 +21,7 @@ import { imagesAeropuerto } from "../../constants/projects/aeropuerto";
 
 import { dataConjunto } from "../../constants/projects/conjunto";
 import { imagesConjunto } from "../../constants/projects/conjunto";
+import { dataDragados, imagesDragados } from "../../constants/projects/dragados";
 
 export default function Projects() {
 
@@ -39,6 +40,11 @@ export default function Projects() {
           Desde mejoras, montajes, mantenimientos preventivos y correctivos, hasta alteraciones y reemplazos de estructuras y accesorios.
           Aplicamos nuestra experiencia y compromiso para enfrentar los desafíos complejos de ingeniería civil y mecánica.
         </p>
+      </div>
+
+      <div className="flex flex-col lg:flex-row items-center mx-auto max-w-3xl sm:max-w-6xl">
+        <Card data={dataDragados}/>
+        <Swipper images={imagesDragados} />
       </div>
 
       <div className="flex flex-col lg:flex-row items-center mx-auto max-w-3xl sm:max-w-6xl">
