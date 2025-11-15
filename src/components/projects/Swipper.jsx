@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-// import { images } from "../../constants/projects/ptar";
 
 export default function Swipper( {images} ) {
     return(
