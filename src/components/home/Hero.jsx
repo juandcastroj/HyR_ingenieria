@@ -32,7 +32,7 @@ export default function Hero() {
                 >
                   Servicios
                 </Link>
-                <Link to="/proyectosss" className="text-lg font-semibold text-white hover:text-gray-200">
+                <Link to="/proyectos" className="text-lg font-semibold text-white hover:text-gray-200">
                   Ver proyectos <span aria-hidden="true">→</span>
                 </Link>
               </div>

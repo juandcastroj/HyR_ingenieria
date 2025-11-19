@@ -4,24 +4,14 @@ import "swiper/css/navigation";
 import Card from "./Card";
 import Swipper from "./Swipper";
 
-import { dataPtar } from "../../constants/projects/ptar";
-import { dataIbague } from "../../constants/projects/ibague";
-
-import { imagesPtar } from "../../constants/projects/ptar";
-import { imagesIbague } from "../../constants/projects/ibague";
-
-import { dataSoacha } from "../../constants/projects/soacha";
-import { imagesSoacha } from "../../constants/projects/soacha";
-
-import { dataRedMatriz } from "../../constants/projects/redMatriz";
-import { imagesRedMatriz } from "../../constants/projects/redMatriz";
-
-import { dataAeropuerto } from "../../constants/projects/aeropuerto";
-import { imagesAeropuerto } from "../../constants/projects/aeropuerto";
-
-import { dataConjunto } from "../../constants/projects/conjunto";
-import { imagesConjunto } from "../../constants/projects/conjunto";
+import { dataPtar, imagesPtar } from "../../constants/projects/ptar";
+import { dataIbague, imagesIbague } from "../../constants/projects/ibague";
+import { dataSoacha, imagesSoacha } from "../../constants/projects/soacha";
+import { dataRedMatriz, imagesRedMatriz } from "../../constants/projects/redMatriz";
+import { dataAeropuerto, imagesAeropuerto } from "../../constants/projects/aeropuerto";
+import { dataConjunto, imagesConjunto } from "../../constants/projects/conjunto";
 import { dataDragados, imagesDragados } from "../../constants/projects/dragados";
+import { dataCerramiento } from "../../constants/projects/cerramiento";
 
 export default function Projects() {
 
@@ -32,7 +22,7 @@ export default function Projects() {
   return (
     <div className="px-6 lg:px-10 py-32 bg-gray-50">
 
-      <div className="max-w-3xl mx-auto text-blue-900 text-center font-Oswald">
+      <div className="max-w-3xl mx-auto pb-4 text-blue-900 text-center font-Oswald">
         <h1 className="text-3xl font-bold">
           Nuestros proyectos
         </h1>
@@ -75,6 +65,10 @@ export default function Projects() {
       <div className="flex flex-col lg:flex-row items-center mx-auto max-w-3xl sm:max-w-6xl">
         <Card data={dataConjunto}/>
         <Swipper images={imagesConjunto} />
+      </div>
+
+      <div className="flex flex-col lg:flex-row items-center mx-auto max-w-3xl sm:max-w-6xl">
+        <Card data={dataCerramiento}/>
       </div>
 
     </div>
