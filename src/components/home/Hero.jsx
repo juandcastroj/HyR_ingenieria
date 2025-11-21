@@ -20,7 +20,7 @@ export default function Hero() {
         
             <div className="text-center grid gap-y-8 lg:gap-y-2">
               <h1 className="text-5xl font-Oswald font-bold text-white sm:text-6xl animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
-               INGENIERÍA Y MONTAJES HYR S.A.S 
+               INGENIERÍA Y MONTAJES HyR S.A.S 
               </h1>
               <p className="mt-8 text-lg font-Oswald font-semibold text-white sm:text-xl/8 animate-fade-down animate-duration-[2500ms] animate-delay-[1000ms]">
                Realizamos proyectos de Ingeniería Civil y Mecánica generando credibilidad y compromiso implementando estándares de calidad y seguridad.
