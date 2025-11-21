@@ -43,8 +43,8 @@ export default function Contact() {
                   <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#051a50]"/>
                 </dt>
                 <dd>
-                  <a href="mailto:contacto@ingenieriahyr.com" className="text-[#051a50] font-semibold">
-                      contacto@ingenieriahyr.com                  
+                  <a href="mailto:proyectos@ingenieriahyr.com" className="text-[#051a50] font-semibold">
+                      proyectos@ingenieriahyr.com                  
                     </a>
                 </dd>
               </div>
